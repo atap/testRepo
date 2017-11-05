@@ -1,0 +1,21 @@
+<div class="container-fluid">
+        <label class="username-lbl">GitHub user name:</label>
+        <form ng-submit="loginBtnclicked()">
+          <div class="input-container">
+            <input id="username" type="text" name="username" class="form-control" placeholder="Username" ng-model="usernameModel" autofocus/>
+          </div>
+          <br>
+          <button  type="submit" class="btn btn-success btn-submit">Search</button>
+        </form>
+        <br>
+        <div id="detailsDiv" ng-show="isVisible">
+          <p><b>Name: </b>{{name}}</p>
+          <p><b>Avatar: </b>{{avatar}}</p>
+          <p><b>ProfileURL: </b>{{githubURL}}</p>
+
+          <b>List of repositories:</b>
+          <ul>
+              <li ng-repeat="repo in repos"><a href="#" ng-click="getLanguages(repo)">{{repo.name}}</a></li>
+          </ul> 
+        </div>
+</div>

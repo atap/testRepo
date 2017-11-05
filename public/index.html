@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="searchApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link href="css/angular-ui-switch-min.css" rel="stylesheet">
+    
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <script src="lib/angularjs/angular.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.10.0" src="https://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="lib/angularjs/angular-ui-router.min.js"></script>
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/angular-chart.min.js"></script>
+    <script src="js/angular-ui-switch.min.js"></script>
+    
+    <script src="js/route.js"></script>
+
+    <!-- Search page -->
+    <script src="pages/search/factory/searchFactory.js"></script>
+    <script src="pages/search/services/accountInfoService.js"></script>
+    <script src="pages/search/services/reposService.js"></script>
+    <script src="pages/search/services/repoLanguageService.js"></script>
+    <script src="pages/search/controllers/searchPageCntrl.js"></script>
+    
+</head>
+<body>
+    <ui-view>
+        <div class="loader"></div>
+    </ui-view>
+</body>
+</html>
